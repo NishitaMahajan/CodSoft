@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="StyleSheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div id="header">
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-text">
+      <p>FULL STACK WEB DEVELOPER</p>
+      <h1>
+        Hi, I'm <br><span>Nishita Mahajan</span> <br>from Mandi (H.P)
+      </h1>
+    </div>
+
+    <div class="social-float">
+      <a href="https://linkedin.com/in/nishitamahajan" target="_blank">🔗</a><br>
+      <a href="https://instagram.com/o___neha" target="_blank">💻</a>
+    </div>
+  </div>
+</div>
+
+
+  <div id="About">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="about-col-1">
+        <img src="Images/Niseta pp.jpg" alt="User" style="margin: 100px;">
+      </div>
+
+      <!-- Right Column -->
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I am a passionate and detail-oriented MERN Stack Developer with hands-on experience in
+          building dynamic and responsive web applications using MongoDB, Express.js, React.js, and
+          Node.js. As a recent graduate in Information Technology, I have completed multiple
+          personal and academic projects that demonstrate my skills in front-end and back-end
+          development. I am eager to apply my knowledge in a real-world environment, continuously
+          learn new technologies, and contribute to innovative development teams.
+        </p>
+
+        <!-- Tabs -->
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+          <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('Education')">Education</p>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>Frontend</span><br>HTML , CSS , JavaScript , REACT</li>
+            <li><span>Backend</span><br>Nodejs ,Expressjs, MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>Training in MERN Stack</span><br>Comprehensive training in building dynamic web applications using the MERN stack.</li>
+            <li><span>Cyber security</span><br>Practical training in protecting systems, networks, and data from cyber threats.</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>Bachelor in Information Technology</span><br> University Institute in Information Technology</li>
+            <li><span>Diploma in Computer Science Engg.</span><br>Govt. Polytechnic For Women Kandaghat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- -----------------SERVICES---------------- -->
+
+    <div id = "services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually appealing and modern website designs that align with the client’s brand and identity.
+                       My focus is on building clean layouts with intuitive navigation, ensuring that users have an engaging and smooth browsing experience.
+                       All designs are fully responsive, adapting seamlessly to desktops, tablets, and mobile devices.  </p>
+                    <a href ="#">Learn More</a>
+                    </div>
+
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend</h2>
+                    <p> I specialize in developing interactive and responsive user interfaces using HTML, CSS, JavaScript, and React. By combining functionality with creativity, I bring designs to life with smooth animations, transitions, and pixel-perfect details.
+                        My goal is to deliver fast-loading, mobile-friendly, and visually consistent web applications.</p>
+                    <a href="#">Learn More</a>
+                    </div>
+                    
+                    <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Backend</h2>
+                    <p>I build secure, scalable, and efficient backend systems that power modern web applications. From managing databases to handling APIs and server-side logic, I ensure seamless communication between the frontend and backend.
+                       With a focus on performance and security, I create solutions that can grow with business needs.</p>
+                    <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------PORTFOLIO---------------- -->
+
+  <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    
+    <div class="work-list">
+      <div class="work">
+        <img src="Images/work1.jpg" alt="Restaurant Website">
+        <div class="layer">
+          <h3>Restaurant Website </h3>
+          <p>A modern, responsive restaurant website showcasing menu, services, and contact details with an attractive user-friendly design.</p>
+          <a href="#"><i class="fa-solid fa-server"></i></a>
+        </div>
+      </div>
+    </div>
+
+        <div class="work-list">
+      <div class="work">
+        <img src="Images/laptop-593673_1280.jpg" alt="Shoes Website">
+        <div class="layer">
+          <h3>Shoes Website</h3>
+          <p>A stylish and responsive shoe website showcasing collections, offers, and easy navigation for an enhanced shopping experience.</p>
+          <a href="#"><i class="fa-solid fa-server"></i></a>
+        </div>
+      </div>
+    </div>
+
+        <div class="work-list">
+      <div class="work">
+        <img src="Images/work1.jpg" alt="My Portfolio">
+        <div class="layer">
+          <h3>My Portfolio</h3>
+          <p>A personal portfolio website highlighting my skills, projects, and journey as a Full Stack Web Developer.</p>
+          <a href="#"><i class="fa-solid fa-server"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#" class="btn">See More...</a>
+  </div>
+</div> 
+<!-- -----------CONTACT----------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">CONTACT ME</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> 3nishita2@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +918580700284</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Images/My Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+
+      <!-- FORM SHOULD BE INSIDE contact-right -->
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btnbtn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="copyright">
+    <p>Copyright@Nishita Mahajan.Made by Me</p>
+  </div>
+</div>
+
+    <script>
+function openTab(tabName) {
+  let tabLinks = document.getElementsByClassName("tab-links");
+  let tabContents = document.getElementsByClassName("tab-contents");
+
+  // Remove active classes
+  for (let link of tabLinks) {
+    link.classList.remove("active-link");
+  }
+  for (let content of tabContents) {
+    content.classList.remove("active-tab");
+  }
+
+  // Add active class to clicked tab
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabName).classList.add("active-tab");
+}
+</script>
+
+</body>
+</html>

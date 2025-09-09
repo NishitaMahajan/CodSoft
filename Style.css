@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+ body {
+    background-color: black;
+    color: #fff;
+}
+ 
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/pic3i.png);
+   background-size:100cap;
+   background-position: center;
+    
+
+}
+.conatiner{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 80px  20px; 
+
+}
+
+nav ul li a{
+    color :#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 50%;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.social-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+}
+
+
+
+
+/* About Section */
+#About {
+  padding: 80px 20px;
+  background: #111;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Column */
+.about-col-1 img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 0, 80, 0.6);
+}
+
+/* Right Column */
+.about-col-2 {
+  flex: 1;
+  padding: 20px;
+}
+
+.sub-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff004f;
+  margin-bottom: 20px;
+}
+
+.about-col-2 p {
+  line-height: 1.8;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* Tabs */
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.tab-links {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ccc;
+  position: relative;
+  transition: 0.3s;
+}
+
+.tab-links:hover {
+  color: #ff004f;
+}
+
+.tab-links.active-link {
+  color: #ff004f;
+}
+
+.tab-links.active-link::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+
+/* Tab Content */
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-contents ul li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.tab-contents ul li span {
+  color: #ff004f;
+  font-weight: 600;
+  display: block;
+  font-size: 16px;
+}
+
+
+#services {
+  padding: 60px 20px;
+  background: #f7f9fc;
+  color: #333;
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: auto;
+} */
+
+.sub-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.services-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-list > div {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  flex: 1 1 30%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.services-list i {
+  font-size: 40px;
+  color: #0066ff;
+  margin-bottom: 15px;
+}
+
+.services-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.services-list p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.services-list a {
+  text-decoration: none;
+  color: #0066ff;
+  font-weight: 500;
+  border: 1px solid #0066ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.services-list a:hover {
+  background-color: #0066ff;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-list > div {
+    flex: 1 1 100%;
+  }
+}
+
+/* ----------PORTFOLIO----------- */
+/* Portfolio Section */
+#portfolio {
+  padding: 60px 20px;
+  background-color: #f5f8ff;
+  color: #222;
+}
+
+#portfolio .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* Horizontal Work Card */
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Each Card */
+.work {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.work:hover {
+  transform: translateY(-8px);
+}
+
+/* Image Styling */
+.work img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Side */
+.layer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  flex: 1;
+}
+
+.layer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.layer p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.layer a {
+  align-self: flex-start;
+  color: #fff;
+  background: #0066ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.layer a:hover {
+  background: #0047b3;
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 12px 28px;
+  background-color: #0066ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0047b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .work {
+    flex-direction: column;
+  }
+
+  .work img {
+    width: 100%;
+    height: auto;
+  }
+
+  .layer {
+    padding: 20px;
+  }
+}
+
+/* -----------------CONTACT-------------------- */  
+
+/* Container layout */
+#contact {
+  padding: 60px 20px;
+  background-color: #111;
+  /* background-color: white; */
+  color: #fff;
+}
+
+
+.sub-title{
+    color: #ff004f;
+    margin-left: -280px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Contact Info (Left Side) */
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-left .sub-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 28px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #ff004f;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #cc003d;
+}
+
+.btn2 {
+  background: #ff004f;
+}
+
+
+/* Contact Form (Right Side) */
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 70%;
+  border: none;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #ff004f;
+}
+
+form.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btnbtn2{
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 12px 28px;
+  background-color: #ff004f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+} 
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    /* margin-top: 20px; */
+}
